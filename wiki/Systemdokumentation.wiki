@@ -27,8 +27,7 @@ I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation v
 Flöde vår Vårdpersonal som vill söka på patientinformation. Detta flödet visar alla situationer som kan uppstå inom PDL. I normalfallet så räcker det med tre musklick.
 
 *Inre sekretess*
-  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet
-https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png]
   # Användaren behöver intyga patientrelation om en sådan inte redan finns
   # Användaren får se information som tillhör vårdenheten för det valda medarbetaruppdraget
   # Användaren väljer att få se information från en annan vårdenhet (i de fall uppdraget tillåter det)
@@ -37,8 +36,7 @@ https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
   # Slutgiltligen väljer användaren att gå vidare och visa vårdsystem
 
 *Sammanhållen Journalföring*
-  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet
-https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png]
   # Användaren behöver intyga patientrelation om en sådan inte redan finns
   # Användaren får se information som tillhör vårdenheten för det valda medarbetaruppdraget
   # Användaren väljer att få se information från en annan vårdgivare
