@@ -34,6 +34,7 @@ Information hämtas in från flera tjänster och ger i slutändan användaren m�
 _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf Diagram för informationsöversikt]_
 
 ==Informations- och verksamhetslogik==
+Diagrammet beskriver standardflödet i verksamhetslogiken tillsammans med en beskrivning av hur information transformeras för varje steg.
 
 [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Verksamhetslogik.png]
 _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf Diagram för PDL Verksamhetslogik]_
