@@ -1,0 +1,12 @@
+==Bakgrund och ändamål==
+==Funktionsbeskrivning==
+==Översiktlig systembeskrivning==
+==Sekvensdiagram==
+==Datalagring==
+==Installation==
+==Konfiguration==
+==Felhantering==
+==Loggning==
+==Lokala utvecklingsmiljö==
+==Säkerhet==
+==Kvarstående utvecklingspunkter==
