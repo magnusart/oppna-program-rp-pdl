@@ -23,6 +23,29 @@ I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation v
   # Vårdpersonal som vill få tillgång till spärrad information på annan vårdenhet behöver inhämta samtycke från patient eller intyga att en nödsituation råder
   # Vårdpersonal kan ej komma åt spärrad information hos andra vårdgivare utan att först kontakta denna vårdgivare och be dem att öppna spärren för dem 
 
+==Användargränssnitt==
+Flöde vår Vårdpersonal som vill söka på patientinformation. Detta flödet visar alla situationer som kan uppstå inom PDL. I normalfallet så räcker det med tre musklick.
+
+*Inre sekretess*
+  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet
+https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+  # Användaren behöver intyga patientrelation om en sådan inte redan finns
+  # Användaren får se information som tillhör vårdenheten för det valda medarbetaruppdraget
+  # Användaren väljer att få se information från en annan vårdenhet (i de fall uppdraget tillåter det)
+  # Då det finns spärrade vårdenheter kan användaren avgöra om dessa är relevant och välja att få se vart informationen finns
+  # I det fall att användaren beslutar att den spärrade informationen är relevant så kan denne välja att passera spärren
+  # Slutgiltligen väljer användaren att gå vidare och visa vårdsystem
+
+*Sammanhållen Journalföring*
+  # Ett tillgängligt uppdrag väljs och en sökning görs visa gränssnittet
+https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+  # Användaren behöver intyga patientrelation om en sådan inte redan finns
+  # Användaren får se information som tillhör vårdenheten för det valda medarbetaruppdraget
+  # Användaren väljer att få se information från en annan vårdgivare
+  # Då det finns spärrade vårdenheter kan användaren avgöra om dessa är relevant och välja att få se vart informationen finns
+  # Eftersom uppdraget är Sammanhållen Journalföring och informationen finns hos en annan vårgivare så kan inte användaren välja att passera spärren.
+  # Slutgiltligen väljer användaren att gå vidare och visa vårdsystem
+
 ==Översiktlig systembeskrivning==
 Systemet består av ett Portlet gränssnitt, samt ett antal interna tjänster som kommunicerar med tredjepartssystem. 
 
