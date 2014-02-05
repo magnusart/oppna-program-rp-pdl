@@ -23,8 +23,16 @@ I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation v
   # Vårdpersonal som vill få tillgång till spärrad information på annan vårdenhet behöver inhämta samtycke från patient eller intyga att en nödsituation råder
   # Vårdpersonal kan ej komma åt spärrad information hos andra vårdgivare utan att först kontakta denna vårdgivare och be dem att öppna spärren för dem 
 
-
 ==Översiktlig systembeskrivning==
+Systemet innehåller ett gränssnitt som är pakterat som en Portlet samt ett antal interna tjänster som kommunicerar med tredjepartssystem.
+
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf PDF-fil för Informationsöversikt]
+
+https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Informationso%CC%88versikt.png
+_Diagram för informationsöversikt_
+
+
+
 ==Sekvensdiagram==
 ==Datalagring==
 ==Installation==
