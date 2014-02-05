@@ -5,6 +5,9 @@ Vårdpersonal ska göra aktiva val istället för att få tillgång att se all i
 
 Applikationen innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
 
+https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+_Gränssnitt för att söka på patientinformation_
+
 ==Funktionsbeskrivning==
 I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation visas.
 
