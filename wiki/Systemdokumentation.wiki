@@ -1,5 +1,5 @@
 ==Bakgrund och ändamål==
-Patientdatalagen ([http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing handbok]) syftar till att reglera hur vårdpersonal tar del av patientinformation. 
+Patientdatalagen ([http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing se patientdatalagens handbok]) syftar till att reglera hur vårdpersonal tar del av patientinformation. 
 
 Vårdpersonal ska göra aktiva val istället för att få tillgång att se all information om en patient. Information som kan vara irrelevant eller känslig.
 
@@ -59,6 +59,12 @@ Diagrammet beskriver standardflödet i verksamhetslogiken tillsammans med en bes
 
 [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Verksamhetslogik.png]
 _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf Diagram för PDL Verksamhetslogik]_
+
+==HSA Medarbetaruppdrag==
+Diagrammet beskriver logiken för att hantera HSA medarbetaruppdrag.
+
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdrag%20v01.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/HSA%20Medarbetaruppdrag.png]
+_[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdrag%20v01.pdf Diagram för HSA medarbetaruppdrag]_
 
 ==Datalagring==
 ==Installation==
