@@ -26,12 +26,8 @@ I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation v
 ==Översiktlig systembeskrivning==
 Systemet innehåller ett gränssnitt som är pakterat som en Portlet samt ett antal interna tjänster som kommunicerar med tredjepartssystem.
 
-[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf PDF-fil för Informationsöversikt]
-
-https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Informationso%CC%88versikt.png
-_Diagram för informationsöversikt_
-
-
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Informationso%CC%88versikt.png]
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf _Diagram för informationsöversikt_]
 
 ==Sekvensdiagram==
 ==Datalagring==
