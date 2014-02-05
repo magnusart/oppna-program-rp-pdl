@@ -1,10 +1,12 @@
 ==Bakgrund och ändamål==
 Patientdatalagen ([http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing handbok]) syftar till att reglera hur vårdpersonal tar del av patientinformation. 
 
-Vårdpersonal ska göra aktiva val istället för att få tillgång att se information som kan vara irrelevant eller känslig.
+Vårdpersonal ska göra aktiva val istället för att få tillgång att se all information om en patient. Information som kan vara irrelevant eller känslig.
+
+Applikationen innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
 
 ==Funktionsbeskrivning==
-I korthet så kräver PDL att ett antal krav uppfylls.
+I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation visas.
 
   # Vårdpersonal ska identifieras med stark autentisering (exempelvis SITHS e-legitimation)
   # Vårdpersonal ska ha en aktiv patientrelation med patienten
