@@ -5,7 +5,8 @@ Applikationen innehåller ett gränssnitt som guidar användaren att göra de va
 
 Ändamålet med applikationen är främst att skapa en central ingång för att visa patientinformation och samtidigt förenkla för webbsystem att stödja PDL.
 
-[http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing Se patientdatalagens handbok för information om PDL]. 
+===Externa resurser===
+[http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing Socialstyrelsens handbok för PDL]. 
 
 ==Funktionsbeskrivning==
 I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation visas.
