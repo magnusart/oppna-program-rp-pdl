@@ -3,6 +3,8 @@ Patientdatalagen syftar till att reglera hur vårdpersonal tar del av patientinf
 
 Applikationen innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
 
+Ändamålet med applikationen är främst att skapa en central ingång för att visa patientinformation och samtidigt förenkla för webbsystem att stödja PDL.
+
 [http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing Se patientdatalagens handbok för information om PDL]. 
 
 ==Funktionsbeskrivning==
