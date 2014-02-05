@@ -24,14 +24,20 @@ I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation v
   # Vårdpersonal kan ej komma åt spärrad information hos andra vårdgivare utan att först kontakta denna vårdgivare och be dem att öppna spärren för dem 
 
 ==Översiktlig systembeskrivning==
-Systemet består av ett Portlet gränssnitt, samt ett antal interna tjänster som kommunicerar med tredjepartssystem.
+Systemet består av ett Portlet gränssnitt, samt ett antal interna tjänster som kommunicerar med tredjepartssystem. 
+
+Systemet har även en PostgreSQL-databas i vilken logginformation sparas. Denna kan komma att ersättas med en loggtjänst i framtiden.
 
 Information hämtas in från flera tjänster och ger i slutändan användaren möjlighet att se patientinformation.
 
 [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Informationso%CC%88versikt.png]
 _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Informationso%CC%88versikt%20v01.pdf Diagram för informationsöversikt]_
 
-==Sekvensdiagram==
+==Informations- och verksamhetslogik==
+
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/PDL%20Verksamhetslogik.png]
+_[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/PDL%20Verksamhetslogik%20v02.pdf Diagram för PDL Verksamhetslogik]_
+
 ==Datalagring==
 ==Installation==
 ==Konfiguration==
