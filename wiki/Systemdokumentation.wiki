@@ -1,5 +1,24 @@
 ==Bakgrund och ändamål==
+Patientdatalagen ([http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing handbok]) syftar till att reglera hur vårdpersonal tar del av patientinformation. 
+
+Vårdpersonal ska göra aktiva val istället för att få tillgång att se information som kan vara irrelevant eller känslig.
+
 ==Funktionsbeskrivning==
+I korthet så kräver PDL att ett antal krav uppfylls.
+
+  # Vårdpersonal ska identifieras med stark autentisering (exempelvis SITHS e-legitimation)
+  # Vårdpersonal ska ha en aktiv patientrelation med patienten
+  # Vårdpersonal arbetar med ett aktuellt vårduppdrag som beskriver vad han eller hon får tillgång att se
+  # Vårdpersonal kan direkt välja bland information som tillhör den vårdenhet som uppdraget ligger på
+  # Vårdpersonal måste aktivt välja att få se information från andra vårdenheter eller vårdgivare (om uppdraget tillåter det
+  # Vårdpersonal måste aktivt välja vilken information som är relevant för det aktuella tillfället
+  # Alla val som gör loggas i en systemlogg och ligger till grund för uppföljning för att stävja missbruk
+  # Vid sammanhållen journalföring (direktåtkomst av information från annan vårdgivare) så krävs att patienten har gett sitt samtycke till sammanhållen journalföring
+  # Vårdpersonal som sökt på en patient med spärrad information på annan vårdenhet behöver göra ett aktivt val att få se på vilken vårdenhet den spärrade informationen finns
+  # Vårdpersonal som vill få tillgång till spärrad information på annan vårdenhet behöver inhämta samtycke från patient eller intyga att en nödsituation råder
+  # Vårdpersonal kan ej komma åt spärrad information hos andra vårdgivare utan att först kontakta denna vårdgivare och be dem att öppna spärren för dem 
+
+
 ==Översiktlig systembeskrivning==
 ==Sekvensdiagram==
 ==Datalagring==
