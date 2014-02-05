@@ -1,12 +1,9 @@
 ==Bakgrund och ändamål==
-Patientdatalagen ([http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing se patientdatalagens handbok]) syftar till att reglera hur vårdpersonal tar del av patientinformation. 
-
-Vårdpersonal ska göra aktiva val istället för att få tillgång att se all information om en patient. Information som kan vara irrelevant eller känslig.
+Patientdatalagen syftar till att reglera hur vårdpersonal tar del av patientinformation. 
 
 Applikationen innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
 
-https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
-_Gränssnitt för att söka patientinformation_
+[http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing Se patientdatalagens handbok för information om PDL]. 
 
 ==Funktionsbeskrivning==
 I korthet så kräver PDL att ett antal krav uppfylls innan patientinformation visas.
