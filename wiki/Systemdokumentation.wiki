@@ -1,9 +1,14 @@
+=Sök patientinformation med stöd för PDL=
+
 ==Bakgrund och ändamål==
 Patientdatalagen syftar till att reglera hur vårdpersonal tar del av patientinformation. 
 
-Applikationen innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
+Applikationen "Sök patientinformation med stöd för PDL" innehåller ett gränssnitt som guidar användaren att göra de val som krävs för att PDL ska uppfyllas. När information valts ut så visas den i en visare som ej ska göra annan information tillgänglig än den som användaren aktivt har valt.
 
 Ändamålet med applikationen är främst att skapa en central ingång för att visa patientinformation och samtidigt förenkla för webbsystem att stödja PDL.
+
+Nyttan är att de vårdapplikationerna som ansluts till Regionportalen behöva göra en betydligt mindre förändring för att uppfylla PDL-kraven jämfört med om de själv skulle göra alla de anpassningar PDL medför. Webbaserade vårdapplikationer som har krav på sig att uppfylla PDL kan göra detta på olika sätt:
+
 
 *Externa resurser*
 
