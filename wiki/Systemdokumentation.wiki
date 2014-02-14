@@ -1,4 +1,4 @@
-=Sök patientinformation med stöd för PDL=
+=PDL anpassa din webbaserade vårdapplikation=
 
 ==Bakgrund och ändamål==
 Patientdatalagen syftar till att reglera hur vårdpersonal tar del av patientinformation. 
