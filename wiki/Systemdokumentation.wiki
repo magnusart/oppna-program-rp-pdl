@@ -89,3 +89,43 @@ _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdr
 ==Lokala utvecklingsmiljö==
 ==Säkerhet==
 ==Kvarstående utvecklingspunkter==
+
+
+
+----
+
+
+
+Liferay projects for VGR to meet the legal requirements that Patientdatalagen requires of web applications
+
+For more information please look at the page [Systemdokumentation] (in Swedish)
+
+*Basic flow*
+
+*1. A search for patient information is made by the user.*
+https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
+
+*2. Depending on the chosen assignment different information is visible*
+
+*3. The user needs to decide what information is relevant for the particular case at hand*
+
+*4. When the guide is through viewers are presented where the user will have access to specified information only*
+
+The user's choices are logged and what is visible at any given moment is also logged.
+
+===Dependencies===
+The PDL portlet have several dependencies.
+
+|| *Dependency* || *Role* ||
+|| Siteminder || Provides strong authentication with SITHS Smart card ||
+|| HSA WS || Directory service to preform lookups for Care Provider and Care Unit information ||
+|| Patient Relation (SÄK) || An active patient relation between patient and user is mandatory to view patient information ||
+|| Patient Consent (SÄK) || Consent determines if the patient allows for information to be shared with direct access between Care Providers ||
+|| Blocks (SÄK) || Patients can prevent other Care Units or Care Providers from directly accessing their patient information ||
+|| Authentication (SÄK) || SAML Federation to provide SSO, SLO and Centralized Assignment Choice ||
+|| Source data || Different sources expose their information (see separate table) ||
+|| Viewers || Information can have different viewers (see separate table) ||
+|| Log repository || PostgreSQL database where log information is persisted, might change into a log service in the future ||
+
+|| *Source* || *Type of information* || *Viewers* ||
+|| Mawell Info Broker || Radiology requests and studies || GE Zero Footprint ||
