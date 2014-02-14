@@ -7,18 +7,6 @@ Applikationen "Sök patientinformation med stöd för PDL" innehåller ett grän
 
 Ändamålet med applikationen är främst att skapa en central ingång för att visa patientinformation och samtidigt förenkla för webbsystem att stödja PDL.
 
-Nyttan är att de vårdapplikationerna som ansluts till Regionportalen behöva göra en betydligt mindre förändring för att uppfylla PDL-kraven jämfört med om de själv skulle göra alla de anpassningar PDL medför. Webbaserade vårdapplikationer som har krav på sig att uppfylla PDL kan göra detta på olika sätt:
-
-[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/RP%20PDL%20kontra%20att%20ansluta%20själv%202.png]
-
-Den gröna rutan visar att viss anpassning behöver webbtjänsten göra oavsett vilket alternativ man väljer. Den insatsen som görs om man ansluter via Regionportalen behöver göras oavsett om man går via Regionportalen eller ansluter direkt till säkerhetstjänsterna.
-Väljer man att använda PDL-tjänsten i Regionportalen behöver anslutande vårdapplikation göra följande:
-
-  *  Vårdenhet (VE) märka informationen
-  *  Svara på vilken/vilka VE information om patient finns (webservice tjänst)
-  *  Kunna ta emot en biljett och endast visa information baserat på biljetten (vald patient och vald/valda VE)
-  *  Konfigurera att enda vägen att komma åt vårdapplikationen är via PDL-tjänsten i Regionportalen
-
 *Externa resurser*
 
   * [http://www.socialstyrelsen.se/regelverk/handbocker/handbokominformationshanteringochjournalforing Socialstyrelsens handbok för PDL]. 
