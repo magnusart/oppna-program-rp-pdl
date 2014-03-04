@@ -47,10 +47,10 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 
 || *Fältnamn PDL-logg* || *Fältnamn loggtjänst i Säkerhetstjänsterna* || 
 || id || Log > LogId || 
-|| employee_display_name || ||
-|| employee_id || || 
-|| patient_display_name || ||
-|| patient_id ||  ||
+|| employee_display_name || Log > User > Name ||
+|| employee_id || Log > User > UserId || 
+|| patient_display_name || Log > Resources > PatientName ||
+|| patient_id || Log > Resources > PatientId ||
 || assignment_display_name ||  || 
 || assignment_id || Log > User > Assignment || 
 || care_provider_display_name || Log > User > CareProviderName ||
@@ -58,7 +58,7 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 || care_unit_display_name || Log > User > CareUnitName ||
 || care_unit_id || Log > User > CareUnitId || 
 || creation_time || Log > Activity > StartDate || 
-|| log_text || || 
-|| system_id || || 
+|| log_text ||  || 
+|| system_id || Log > System > SystemId || 
 || user_action || ||
 || search_session || || 
