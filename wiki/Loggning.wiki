@@ -7,7 +7,7 @@ Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand gran
 
 == Fält som ingår i loggtjänsten ==
 
-|| fält || beskrivning || exempeldata ||
+|| *Fältnamn* || *Beskrivning* || *Exempel* ||
 || id || Unikt id för raden || 021b9675-5b12-4f36-81e5-ead005adfd9d ||
 || employee_display_name || Visningsnamn för anställde || Karin Mattsson ||
 || employee_id || employee_id || SE2321000131-P000000000977 ||
