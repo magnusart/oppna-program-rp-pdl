@@ -41,5 +41,24 @@ Under en sökning skapas flera rader av logginformation i databasen. Det som är
 || ENTER_CARE_SYSTEM || Öppna en viss vårdapplikation ||
 
 == Loggtjänsten i Säkerhetstjänsterna ==
+Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi byggandet av PDL-tjänsten. Därför togs beslutet att bygga en lokal loggtjänst i PDL-tjänsterna. Men utgå ifrån Säkerhetstjänsternas loggtjänst för att senare kunna byta över.
 
 == Skillnad mellan Loggtjänst i Säkerhetstjänsten och i PDL-tjänstens logg ==
+
+|| *Fältnamn PDL-logg* || *Fältnamn Säkerhetstjänsterna* || 
+|| id ||  || 
+|| employee_display_name || ||
+|| employee_id || || 
+|| patient_display_name || ||
+|| patient_id || ||
+|| assignment_display_name || || 
+|| assignment_id || || 
+|| care_provider_display_name || ||
+|| care_provider_id || || 
+|| care_unit_display_name || ||
+|| care_unit_id || || 
+|| creation_time || || 
+|| log_text || || 
+|| system_id || || 
+|| user_action || ||
+|| search_session || || 
