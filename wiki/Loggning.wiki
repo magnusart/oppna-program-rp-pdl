@@ -25,6 +25,21 @@ Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand gran
 || user_action || Vilket aktiva val som användaren utfört || ATTEST_RELATION ||
 || search_session || Unikt id för att knyta ihop de aktiva val som gjorts under en sökning || "bba806a0-d16c-4d59-9668-cec16f89f7e9" ||
 
+Under en sökning skapas flera rader av logginformation i databasen. Det som är intressant är att se vilka aktiva val användaren gör.
+
+|| *Fältvärde* || *Loggningstillfälle* ||
+|| SEARCH_PATIENT || När patienten trycker på sökknappen ||
+|| ATTEST_RELATION || När en patientrelation behöver attesteras ||
+|| ATTEST_CONSENT || När ett patientsamtycke till sammanhållen jounralföring attesteras ||
+|| EMERGENCY_CONSENT || När en nödsituation råder och samtycke till sammanhållen journalföring behövs ||
+|| REVEAL_BLOCKED || När användaren anser sig behöva få reda på vilken information som är skyddad ||
+|| PASS_BLOCKED || Passera blockerad information med medgivande från patient ||
+|| EMERGENCY_PASS_BLOCKED || Passera blockerad infomrmation vid nödsituation ||
+|| REVEAL_OTHER_UNITS || Visar informationsresurstype från andra vårdgivare ||
+|| REVEAL_OTHER_PROVIDER || Visar informationsresurstype från andra vårdenheter ||
+|| SUMMARY_CARE_SYSTEMS || Visa summeringen för vårdapplikation ||
+|| ENTER_CARE_SYSTEM || Öppna en viss vårdapplikation ||
+
 == Loggtjänsten i Säkerhetstjänsterna ==
 
 == Skillnad mellan Loggtjänst i Säkerhetstjänsten och i PDL-tjänstens logg ==
