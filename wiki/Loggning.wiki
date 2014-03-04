@@ -45,19 +45,19 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 
 == Skillnad mellan Loggtjänst i Säkerhetstjänsten och i PDL-tjänstens logg ==
 
-|| *Fältnamn PDL-logg* || *Fältnamn Säkerhetstjänsterna* || 
-|| id ||  || 
+|| *Fältnamn PDL-logg* || *Fältnamn loggtjänst i Säkerhetstjänsterna* || 
+|| id || LogId || 
 || employee_display_name || ||
 || employee_id || || 
 || patient_display_name || ||
-|| patient_id || ||
-|| assignment_display_name || || 
-|| assignment_id || || 
-|| care_provider_display_name || ||
-|| care_provider_id || || 
-|| care_unit_display_name || ||
-|| care_unit_id || || 
-|| creation_time || || 
+|| patient_id ||  ||
+|| assignment_display_name ||  || 
+|| assignment_id || Log>User>Assignment || 
+|| care_provider_display_name || Log>User>CareProviderName ||
+|| care_provider_id || Log>User>CareProviderId || 
+|| care_unit_display_name || Log>User>CareUnitName ||
+|| care_unit_id || Log>User>CareUnitId || 
+|| creation_time || Log>Activity>StartDate || 
 || log_text || || 
 || system_id || || 
 || user_action || ||
