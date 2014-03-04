@@ -1,14 +1,6 @@
-#summary One-sentence summary of this page.
+#summary Loggning i PDL-tjänsten
 #labels Featured
 
-= Introduction =
+= Loggning =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand granska de val som en användare gjort i applikationen.
