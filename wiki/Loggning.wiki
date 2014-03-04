@@ -4,3 +4,9 @@
 = Loggning =
 
 Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand granska de val som en användare gjort i applikationen.
+
+== Fält som ingår i loggtjänsten ==
+
+== Loggtjänsten i Säkerhetstjänsterna ==
+
+== Skillnad mellan Loggtjänst i Säkerhetstjänsten och i PDL-tjänstens logg ==
