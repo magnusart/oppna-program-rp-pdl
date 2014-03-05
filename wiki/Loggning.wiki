@@ -7,6 +7,8 @@ Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand gran
 
 == Fält som ingår i loggtjänsten ==
 
+Varje loggpost innehåller följande fält.
+
 || *Fältnamn* || *Beskrivning* || *Exempel* ||
 || id || Unikt id för raden || 021b9675-5b12-4f36-81e5-ead005adfd9d ||
 || employee_display_name || Visningsnamn för anställde || Karin Mattsson ||
@@ -25,7 +27,7 @@ Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand gran
 || user_action || Vilket aktiva val som användaren utfört || ATTEST_RELATION ||
 || search_session || Unikt id för att knyta ihop de aktiva val som gjorts under en sökning || "bba806a0-d16c-4d59-9668-cec16f89f7e9" ||
 
-Under en sökning skapas flera rader av logginformation i databasen. Det som är intressant är att se vilka aktiva val användaren gör.
+Under en sökning skapas flera rader av logginformation i databasen. Det som är intressant är att se vilka aktiva val användaren gör. Detta skrivs in i fältet user_action ovan.
 
 || *Fältvärde* || *Loggningstillfälle* ||
 || SEARCH_PATIENT || När patienten trycker på sökknappen ||
@@ -38,7 +40,7 @@ Under en sökning skapas flera rader av logginformation i databasen. Det som är
 || REVEAL_OTHER_UNITS || Visar informationsresurstype från andra vårdgivare ||
 || REVEAL_OTHER_PROVIDER || Visar informationsresurstype från andra vårdenheter ||
 || SUMMARY_CARE_SYSTEMS || Visa summeringen för vårdapplikation ||
-|| ENTER_CARE_SYSTEM || Öppna en viss vårdapplikation ||
+|| ENTER_CARE_SYSTEM || Vilken vårdapplikation som användaren öppnar ||
 
 == Loggtjänsten i Säkerhetstjänsterna ==
 Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi byggandet av PDL-tjänsten. Därför togs beslutet att bygga en lokal loggtjänst i PDL-tjänsterna. Men utgå ifrån Säkerhetstjänsternas loggtjänst för att senare kunna byta över.
