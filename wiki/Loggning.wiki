@@ -60,7 +60,7 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 || care_unit_display_name || Log > User > CareUnit > CareUnitName ||
 || care_unit_id || Log > User > CareUnit > CareUnitId || 
 || creation_time || Log > Activity > StartDate || 
-|| log_text ||  || 
+|| log_text || Log > Resources > Resource  || 
 || system_id || Log > System > SystemId || 
 || user_action || ||
 || search_session || || 
