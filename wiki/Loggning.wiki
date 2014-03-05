@@ -22,7 +22,7 @@ Varje loggpost innehåller följande fält.
 || care_unit_display_name || Visningsnamn för vårdenhet || Akutklinik ||
 || care_unit_id || HSA-ID på vårdenhet || SE2321000131-E000000006834 ||
 || creation_time || Tid när loggen skapades || 2014-03-03 15:11:11.133+01 ||
-|| log_text || Text som beskriver vad användaren såg i gränssnittet || === UNDERSÖKNINGSRESULTAT === [ ] Västra Götalandsregionen - Verksamhet Medicin Geriatrik och Akutmottagning Östra ||
+|| log_text || Text som beskriver vad användaren såg i gränssnittet || === UNDERSÖKNINGSRESULTAT ===\n [ ] Västra Götalandsregionen - Verksamhet Medicin Geriatrik och Akutmottagning Östra ||
 || system_id || Identifiering på vilket system som loggat || Regionportalen - Sök Patient PDL ||
 || user_action || Vilket aktiva val som användaren utfört || ATTEST_RELATION ||
 || search_session || Unikt id för att knyta ihop de aktiva val som gjorts under en sökning || "bba806a0-d16c-4d59-9668-cec16f89f7e9" ||
