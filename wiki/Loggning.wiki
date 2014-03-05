@@ -53,10 +53,10 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 || patient_id || Log > Resources > PatientId ||
 || assignment_display_name ||  || 
 || assignment_id || Log > User > Assignment || 
-|| care_provider_display_name || Log > User > CareProviderName ||
-|| care_provider_id || Log > User > CareProviderId || 
-|| care_unit_display_name || Log > User > CareUnitName ||
-|| care_unit_id || Log > User > CareUnitId || 
+|| care_provider_display_name || Log > User > CareProvider > CareProviderName ||
+|| care_provider_id || Log > User > CareProvider > CareProviderId || 
+|| care_unit_display_name || Log > User > CareUnit > CareUnitName ||
+|| care_unit_id || Log > User > CareUnit > CareUnitId || 
 || creation_time || Log > Activity > StartDate || 
 || log_text ||  || 
 || system_id || Log > System > SystemId || 
