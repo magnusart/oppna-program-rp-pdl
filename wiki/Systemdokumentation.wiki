@@ -76,6 +76,69 @@ _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdr
 ==Konfiguration==
 ==Felhantering==
 ==Loggning==
+
+Loggning är en viktig komponent i PDL-tjänsten för att kunna i efterhand granska de val som en användare gjort i applikationen.
+
+== Fält som ingår i loggtjänsten ==
+
+Varje loggpost innehåller följande fält.
+
+|| *Fältnamn* || *Beskrivning* || *Exempel* ||
+|| id || Unikt id för raden || 021b9675-5b12-4f36-81e5-ead005adfd9d ||
+|| employee_display_name || Visningsnamn för anställde || Karin Mattsson ||
+|| employee_id || employee_id || SE2321000131-P000000000977 ||
+|| patient_display_name || Visningsnamn för patient || Tian Testberg ||
+|| patient_id || Patient ID (ex personnummer) || 201010101010 ||
+|| assignment_display_name || Visningsnamn på medarbetaruppdrag || VoB SJF_NU Akutklinik ||
+|| assignment_id || HSA-ID på medarbetaruppdrag || SE2321000131-S000000012310 ||
+|| care_provider_display_name || Visningsnamn för vårdgivare || Västra Götalandsregionen ||
+|| care_provider_id || HSA-ID på vårdgivare || SE2321000131-E000000000001 ||
+|| care_unit_display_name || Visningsnamn för vårdenhet || Akutklinik ||
+|| care_unit_id || HSA-ID på vårdenhet || SE2321000131-E000000006834 ||
+|| creation_time || Tid när loggen skapades || 2014-03-03 15:11:11.133+01 ||
+|| log_text || Text som beskriver vad användaren såg i gränssnittet || === UNDERSÖKNINGSRESULTAT === [ ] Västra Götalandsregionen - Verksamhet Medicin Geriatrik och Akutmottagning Östra ||
+|| system_id || Identifiering på vilket system som loggat || Regionportalen - Sök Patient PDL ||
+|| user_action || Vilket aktiva val som användaren utfört || ATTEST_RELATION ||
+|| search_session || Unikt id för att knyta ihop de aktiva val som gjorts under en sökning || "bba806a0-d16c-4d59-9668-cec16f89f7e9" ||
+
+Under en sökning skapas flera rader av logginformation i databasen. Det som är intressant är att se vilka aktiva val användaren gör. Detta skrivs in i fältet user_action ovan.
+
+|| *Fältvärde* || *Loggningstillfälle* ||
+|| SEARCH_PATIENT || När patienten trycker på sökknappen ||
+|| ATTEST_RELATION || När en patientrelation behöver attesteras ||
+|| ATTEST_CONSENT || När ett patientsamtycke till sammanhållen jounralföring attesteras ||
+|| EMERGENCY_CONSENT || När en nödsituation råder och samtycke till sammanhållen journalföring behövs ||
+|| REVEAL_BLOCKED || När användaren anser sig behöva få reda på vilken information som är skyddad ||
+|| PASS_BLOCKED || Passera blockerad information med medgivande från patient ||
+|| EMERGENCY_PASS_BLOCKED || Passera blockerad infomrmation vid nödsituation ||
+|| REVEAL_OTHER_UNITS || Visar informationsresurstype från andra vårdgivare ||
+|| REVEAL_OTHER_PROVIDER || Visar informationsresurstype från andra vårdenheter ||
+|| SUMMARY_CARE_SYSTEMS || Visa summeringen för vårdapplikation ||
+|| ENTER_CARE_SYSTEM || Vilken vårdapplikation som användaren öppnar ||
+
+== Loggtjänsten i Säkerhetstjänsterna ==
+Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi byggandet av PDL-tjänsten. Därför togs beslutet att bygga en lokal loggtjänst i PDL-tjänsterna. Men utgå ifrån Säkerhetstjänsternas loggtjänst för att senare kunna byta över.
+
+== Skillnad mellan Loggtjänst i Säkerhetstjänsten och i PDL-tjänstens logg ==
+
+|| *Fältnamn PDL-logg* || *Fältnamn loggtjänst i Säkerhetstjänsterna*  || 
+|| id || Log > LogId  ||  
+|| employee_display_name || Log > User > Name  ||
+|| employee_id || Log > User > UserId  || 
+|| patient_display_name || Log > Resources > PatientName  ||
+|| patient_id || Log > Resources > PatientId  ||
+|| assignment_display_name ||  || 
+|| assignment_id || Log > User > Assignment  || 
+|| care_provider_display_name || Log > User > CareProvider > CareProviderName  ||
+|| care_provider_id || Log > User > CareProvider > CareProviderId  || 
+|| care_unit_display_name || Log > User > CareUnit > CareUnitName  ||
+|| care_unit_id || Log > User > CareUnit > CareUnitId  || 
+|| creation_time || Log > Activity > StartDate  || 
+|| log_text || Log > Resources > Resource  || 
+|| system_id || Log > System > SystemId  || 
+|| user_action || ||
+|| search_session || || 
+
 ==Lokala utvecklingsmiljö==
 ==Säkerhet==
 ==Kvarstående utvecklingspunkter==
