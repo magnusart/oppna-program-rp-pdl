@@ -72,6 +72,8 @@ Diagrammet beskriver logiken för att hantera HSA medarbetaruppdrag.
 _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdrag%20v01.pdf Diagram för HSA medarbetaruppdrag]_
 
 ==Datalagring==
+Datalagring för loggdata sker i tabellen RP_PDL_EVENT_LOG i ett utpekat schema i en SQL-databas (ex PostgreSQL). Se rubriken loggning för mer information.  
+
 ==Installation==
 PDL-tjänsten är en Portlet och har beroende mot ett antal andra tjänster för att kunna fungera. Portleten är testad i Liferay men har få direkta beroenden mot Liferay.
 
