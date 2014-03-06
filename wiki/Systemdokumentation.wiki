@@ -1,4 +1,6 @@
 =PDL anpassa din webbaserade vårdapplikation=
+*Innehåll*
+<wiki:toc max_depth="3"/>
 
 ==Bakgrund och ändamål==
 Patientdatalagen syftar till att reglera hur vårdpersonal tar del av patientinformation. 
