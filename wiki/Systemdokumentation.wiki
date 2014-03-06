@@ -73,6 +73,23 @@ _[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/pdf/HSA%20Medarbetaruppdr
 
 ==Datalagring==
 ==Installation==
+PDL-tjänsten är en Portlet och har beroende mot ett antal andra tjänster för att kunna fungera. Portleten är testad i Liferay men har få direkta beroenden mot Liferay.
+
+Dessa tjänster krävs för version 1.0 av PDL-tjänsten.
+
+|| *Beroende* || *Roll* ||
+|| Siteminder || Stark Autentisiering med SITHS Smart card ||
+|| HSA Orgmaster || Katalogtjänst för att göra uppslag för Medarbetaruppdrag, Vårdgivare och Vårdenhet ||
+|| Patientrelation (SÄK) || En patientrelation mellan användaren och patienten är obligatorisk ||
+|| Samtycke till Sammanhållen Journalföring (SÄK) || För SJF så krävs att patienten gett sitt samtycke  ||
+|| Spärrar (SÄK) || Patienten kan hindra vårdpersonal att ta del av information om inte en nödsituation råder ||
+|| Källdata för patientinformation || Olika källsystem tillhandahåller sökning för patientinformation (se separat tabell) ||
+|| Visare || Patientinformation kan ha olika visare (see separate table) ||
+|| Lagring av logginformation || PostgreSQL databas där data är persisterad. Kan ändras till loggtjänst i framtiden ||
+
+|| *Source* || *Type of information* || *Viewers* ||
+|| Mawell Info Broker || Radiology requests and studies || GE Zero Footprint ||
+
 ==Konfiguration==
 ==Felhantering==
 Eftersom PDL-tjänsten används för både att söka upp patientinformation och reglera åtkomst så är det viktigt att gränssnittet hanterar en situation där en eller flera underliggande tjänster inte är stabila eller inte svarar. 
@@ -191,17 +208,3 @@ The user's choices are logged and what is visible at any given moment is also lo
 
 ===Dependencies===
 The PDL portlet have several dependencies.
-
-|| *Dependency* || *Role* ||
-|| Siteminder || Provides strong authentication with SITHS Smart card ||
-|| HSA WS || Directory service to preform lookups for Care Provider and Care Unit information ||
-|| Patient Relation (SÄK) || An active patient relation between patient and user is mandatory to view patient information ||
-|| Patient Consent (SÄK) || Consent determines if the patient allows for information to be shared with direct access between Care Providers ||
-|| Blocks (SÄK) || Patients can prevent other Care Units or Care Providers from directly accessing their patient information ||
-|| Authentication (SÄK) || SAML Federation to provide SSO, SLO and Centralized Assignment Choice ||
-|| Source data || Different sources expose their information (see separate table) ||
-|| Viewers || Information can have different viewers (see separate table) ||
-|| Log repository || PostgreSQL database where log information is persisted, might change into a log service in the future ||
-
-|| *Source* || *Type of information* || *Viewers* ||
-|| Mawell Info Broker || Radiology requests and studies || GE Zero Footprint ||
