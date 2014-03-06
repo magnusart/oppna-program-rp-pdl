@@ -184,29 +184,3 @@ Det finns en loggningstjänst i säkerhetstjänsterna, men den var ej klar vi by
 ==Lokala utvecklingsmiljö==
 ==Säkerhet==
 ==Kvarstående utvecklingspunkter==
-
-
-
-----
-
-
-
-Liferay projects for VGR to meet the legal requirements that Patientdatalagen requires of web applications
-
-For more information please look at the page [Systemdokumentation] (in Swedish)
-
-*Basic flow*
-
-*1. A search for patient information is made by the user.*
-https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/search.png
-
-*2. Depending on the chosen assignment different information is visible*
-
-*3. The user needs to decide what information is relevant for the particular case at hand*
-
-*4. When the guide is through viewers are presented where the user will have access to specified information only*
-
-The user's choices are logged and what is visible at any given moment is also logged.
-
-===Dependencies===
-The PDL portlet have several dependencies.
