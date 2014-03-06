@@ -93,6 +93,14 @@ Dessa tjänster krävs för version 1.0 av PDL-tjänsten.
 || Mawell Info Broker || Radiology requests and studies || GE Zero Footprint ||
 
 ==Konfiguration==
+Konfigurationsfiler läggs i hemmakatalogen under {{{~/.rp/pdl}}}. Exempel på konfigurationslayout finns i källkoden.
+
+Dessa element hanteras i konfigurationsfilerna:
+  # Certifikat
+  # Webservice endpoints
+  # Lösenord
+  # Anslutning till datakälla
+
 ==Felhantering==
 Eftersom PDL-tjänsten används för både att söka upp patientinformation och reglera åtkomst så är det viktigt att gränssnittet hanterar en situation där en eller flera underliggande tjänster inte är stabila eller inte svarar. 
 
