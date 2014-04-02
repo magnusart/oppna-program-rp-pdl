@@ -1,0 +1,19 @@
+=Anslutningsguide PDL-tjänsten i Regionportalen=
+*Innehåll*
+<wiki:toc max_depth="3"/>
+
+==Översikt==
+Anslutande vårdapplikationer behöver säkerställa tre aktiviteter.
+
+ # Tillhandahålla en söktjänst
+ # Märka upp vårdinformation med HSA-ID
+ # Motta och tolka en PDL-biljett
+ # Webbaserad visare för informationen
+
+Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så är uppmärkning av vårdinformation med HSA-ID normalt den största aktiviteten som inte ska underskattas.
+
+==Tjänster som behövs==
+
+==Uppmärkning av data==
+
+==Visare av information==
