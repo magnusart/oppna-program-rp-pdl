@@ -15,8 +15,22 @@ Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så 
 Uppmärkning med HSA-ID är en aktivitet som behöver göras vid en PDL-anpassning, oavsett om Regionportalens PDL-tjänst används eller en egen anpassning görs.
 
 ==Tillhandahålla en söktjänst för patientbunden vårdinformation==
-För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behöver 
+För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behövs en söktjänst.
 
-==Uppmärkning av data==
+Söktjänsten tar emot ett patient-ID, exempelvis ett personnummer, i svaret måste information vara uppmärkt med:
+
+ # HSA-ID på enhet som _äger informationen_
+ # ID specifikt för vårdapplikationen
+
+ID:t för vårdapplikationen skickas tillbaka till vårdapplikationens visare om användaren väljer att markera den vårdenhet som informationen tillhör i Regionportalens PDL-tjänst.
+
+Utöver detta så behövs information klassificeras enligt vilken informationsresurstyp den tillhör. Oftast har en vårdapplikation endast information av en typ. Exempelvis: Undersökningsresultat.
+
+I de fall flera olika typer av informations resurser finns så behövs ett regelverk definieras för att kunna kategorisera svaren i söktjänsten enligt rätt typ.
+
+Dessa är de informationsresurstyper som finns definierade i dagsläget.
+ 
+
+==Märka upp vårdinformation med HSA-ID==
 
 ==Visare av information==
