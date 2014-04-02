@@ -5,14 +5,17 @@
 ==Översikt==
 Anslutande vårdapplikationer behöver säkerställa tre aktiviteter.
 
- # Tillhandahålla en söktjänst
+ # Tillhandahålla en söktjänst för patientbunden vårdinformation
  # Märka upp vårdinformation med HSA-ID
- # Motta och tolka en PDL-biljett
+ # Mottaga och tolka en PDL-biljett
  # Webbaserad visare för informationen
 
-Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så är uppmärkning av vårdinformation med HSA-ID normalt den största aktiviteten som inte ska underskattas.
+Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så är uppmärkning av vårdinformation med HSA-ID normalt den största aktiviteten som inte ska underskattas. 
 
-==Tjänster som behövs==
+Uppmärkning med HSA-ID är en aktivitet som behöver göras vid en PDL-anpassning, oavsett om Regionportalens PDL-tjänst används eller en egen anpassning görs.
+
+==Tillhandahålla en söktjänst för patientbunden vårdinformation==
+För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behöver 
 
 ==Uppmärkning av data==
 
