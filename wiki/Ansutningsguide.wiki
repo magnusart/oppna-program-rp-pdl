@@ -110,7 +110,7 @@ Denna hantering skiljer sig inte mot annan certifikatshantering men är viktig f
 I grundutförandet så skickas XML-biljetten skickas över som ett POST-meddelande.
 
 ===SAML-biljett===
-Då PDL-biljetten endast verifierar att en viss användare har gjort ett antal val så kan visaren även behöva identifiera avändarens identitet i de fallen att användaren inte redan är inloggad.
+Då PDL-biljetten endast verifierar att en viss användare har gjort ett antal val så kan visaren även behöva identifiera avändarens identitet i de fallen att användaren inte redan är inloggad i vårdapplikationens visare.
 
 Om vårdapplikationen stödjer federering med SAML 2.0 och SAMBI-profilen så kan vårdapplikationen återanvända den biljett som finns tillgänglig från PDL-tjänsten eller hämta ut en ny mha HSA-ID på användaren.
 
