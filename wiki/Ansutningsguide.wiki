@@ -15,16 +15,47 @@ Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så 
 Uppmärkning med HSA-ID är en aktivitet som behöver göras vid en PDL-anpassning, oavsett om Regionportalens PDL-tjänst används eller en egen anpassning görs.
 
 ==Tillhandahålla en söktjänst för patientbunden vårdinformation==
-För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behövs en söktjänst.
+För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behövs en söktjänst för patientinformation och en klassificering av vilken typ av information som finns. 
 
-Söktjänsten tar emot ett patient-ID, exempelvis ett personnummer, i svaret måste information vara uppmärkt med:
+===Söktjänst===
+Söktjänsten är en web service som tar emot ett patient-ID, exempelvis ett personnummer. 
 
- # HSA-ID på enhet som _äger informationen_
- # ID specifikt för vårdapplikationen
+Svaret från tjänsten innehåller patientbunden information, där viss information är obligatorisk.
 
-ID:t för vårdapplikationen skickas tillbaka till vårdapplikationens visare om användaren väljer att markera den vårdenhet som informationen tillhör i Regionportalens PDL-tjänst.
+|| Information || Obligatorisk ||
+|| HSA-ID på enhet som äger informationen || JA`*` ||
+|| Resurs-ID för informationen || JA ||
+|| HSA-ID på _vårdenhet_ som äger informationen || NEJ ||
+|| HSA-ID på vårdgivare som äger informationen || NEJ  ||
 
-Utöver detta så behövs information klassificeras enligt vilken informationsresurstyp den tillhör. Oftast har en vårdapplikation endast information av en typ. Exempelvis: Undersökningsresultat.
+`*` = Om HSA-ID på Vårdenhet och Vårdgivare finns så behövs ej HSA-ID på 
+
+Resurs-ID är de ID som vårdapplikationen får tillbaka. PDL-tjänsten skickar en biljett som innehåller ett urval av Resurs-ID:n, baserat på hur användaren valt information i PDL-tjänstens gränssnitt. 
+
+Formatet på Resurs-ID bestäms av vårdapplikationen.
+
+===Klassificering av information===
+
+Patientinformationen behöver klassificeras enligt vilken informationsresurstyp den tillhör. Oftast har en vårdapplikation endast typ av information, exempelvis Undersökningsresultat.
+
+PDL-tjänsten behöver ett regelverk för att kunna avgöra vilken typ av information som svaret i söktjänsten innehåller. Ett exempel kan vara att göra skillnad på vad som är en Remiss (Vårdbegäran, VBE) och ett Undersökning (Undersökningsresultat, UND). 
+
+*Informationsresurstyper som stödjs*
+
+|| Informationsresurstyp || Kod ||
+|| Diagnos || DIA ||
+|| Funktionsnedsättning || FUN ||
+|| Läkemedel Ordination/förskrivning || LAK ||
+|| Läkemedel Utlämning || LKM ||
+|| PADL || PAD ||
+|| Vård- och omsorgstagare || PAT ||
+|| Undersökningsresultat || UND ||
+|| Uppmärksamhetsinformation || UPP ||
+|| Vårdbegäran || VBE ||
+|| Vård- och omsorgstjänst || VOT ||
+|| Vård- och omsorgskontakt || VKO ||
+|| Vård- och omsorgsdokument (ostrukturerad) || VOO ||
+|| Vård- och omsorgsplan (ostrukturerad) || VPO ||
 
 I de fall flera olika typer av informations resurser finns så behövs ett regelverk definieras för att kunna kategorisera svaren i söktjänsten enligt rätt typ.
 
