@@ -3,16 +3,11 @@
 <wiki:toc max_depth="3"/>
 
 ==Översikt==
-Anslutande vårdapplikationer behöver säkerställa tre aktiviteter.
+Anslutande vårdapplikationer behöver genomföra ett antal aktiviteter för att ansluta sig.
 
- # Tillhandahålla en söktjänst för patientbunden vårdinformation
- # Märka upp vårdinformation med HSA-ID
- # Mottaga och tolka en PDL-biljett
- # Webbaserad visare för informationen
+Följande stycken beskriver i detalj vad som krävs.
 
-Följande stycken beskriver i detalj vad som krävs. Av dessa aktiviteterna så är uppmärkning av vårdinformation med HSA-ID normalt den största aktiviteten som inte ska underskattas. 
-
-Uppmärkning med HSA-ID är en aktivitet som behöver göras vid en PDL-anpassning, oavsett om Regionportalens PDL-tjänst används eller en egen anpassning görs.
+Av dessa så är uppmärkning med HSA-ID är en aktivitet som behöver göras vid en anpassning till Patientdatalagen, oavsett om Regionportalens PDL-tjänst används eller om en egen anpassning görs.
 
 ==Tillhandahålla en söktjänst för patientbunden vårdinformation==
 För att PDL-tjänsten ska kunna avgöra om en patient har vårdinformation knutet till sig så behövs en söktjänst för patientinformation och en klassificering av vilken typ av information som finns. 
@@ -28,11 +23,11 @@ Svaret från tjänsten innehåller patientbunden information, där viss informat
 || HSA-ID på _vårdenhet_ som äger informationen || NEJ ||
 || HSA-ID på vårdgivare som äger informationen || NEJ  ||
 
-`*` = Om HSA-ID på Vårdenhet och Vårdgivare finns så behövs ej HSA-ID på 
+`*` = Om HSA-ID på nivåerna Vårdenhet och Vårdgivare finns så ersätter detta HSA-ID på enhet
 
 Resurs-ID är de ID som vårdapplikationen får tillbaka. PDL-tjänsten skickar en biljett som innehåller ett urval av Resurs-ID:n, baserat på hur användaren valt information i PDL-tjänstens gränssnitt. 
 
-Formatet på Resurs-ID bestäms av vårdapplikationen.
+Formatet på Resurs-ID bestäms av vårdapplikationen. [http://www.inera.se/TJANSTER--PROJEKT/HSA/ Generell information om HSA och dess innebörd finns på Ineras hemsida].
 
 ===Klassificering av information===
 
@@ -59,11 +54,8 @@ Ofta innehåller en vårdapplikation endast en typ av information.
 || Vård- och omsorgsdokument (ostrukturerad) || VOO ||
 || Vård- och omsorgsplan (ostrukturerad) || VPO ||
 
-I de fall flera olika typer av informations resurser finns så behövs ett regelverk definieras för att kunna kategorisera svaren i söktjänsten enligt rätt typ.
-
-Dessa är de informationsresurstyper som finns definierade i dagsläget.
- 
-
 ==Märka upp vårdinformation med HSA-ID==
 
-==Visare av information==
+==Mottaga och tolka en PDL-biljett==
+
+==Webbaserad visare==
