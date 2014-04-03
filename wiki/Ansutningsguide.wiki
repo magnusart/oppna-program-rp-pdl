@@ -94,7 +94,7 @@ Fält som ingår i PDL-biljetten
 || Patient.age || Patientens ålder ||
 || References || Strukturer som varierar mellan olika vårdapplikationer ||
 
-När vårdapplikationen tar emot biljetten så behövs ett antal kriterier uppfyllas för att validera biljettens äkthet.
+*När vårdapplikationen tar emot biljetten så behövs ett antal kriterier uppfyllas för att validera biljettens äkthet*
 
  # Hämta ut signaturen
  # Hämta ut certifikatet
