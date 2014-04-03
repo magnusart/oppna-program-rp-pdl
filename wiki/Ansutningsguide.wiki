@@ -36,11 +36,13 @@ Formatet på Resurs-ID bestäms av vårdapplikationen.
 
 ===Klassificering av information===
 
-Patientinformationen behöver klassificeras enligt vilken informationsresurstyp den tillhör. Oftast har en vårdapplikation endast typ av information, exempelvis Undersökningsresultat.
+Patientinformationen behöver klassificeras enligt vilken informationsresurstyp den tillhör.
 
 PDL-tjänsten behöver ett regelverk för att kunna avgöra vilken typ av information som svaret i söktjänsten innehåller. Ett exempel kan vara att göra skillnad på vad som är en Remiss (Vårdbegäran, VBE) och ett Undersökning (Undersökningsresultat, UND). 
 
-*Informationsresurstyper som stödjs*
+Ofta innehåller en vårdapplikation endast en typ av information.
+
+*Informationsresurstyper som hanteras*
 
 || Informationsresurstyp || Kod ||
 || Diagnos || DIA ||
