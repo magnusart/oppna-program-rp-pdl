@@ -68,11 +68,50 @@ Detta arbete kan vara både komplext och omfattande om HSA-ID:n inte finns sedan
 [http://www.inera.se/TJANSTER--PROJEKT/HSA/ Generell information om HSA och dess innebörd finns på Ineras hemsida].
 
 ==Webbaserad visare==
-Eftersom möjligheten finns att användaren väljer information från flera olika vårdapplikationer om denna söker från Regionportalen. Då presenteras denne med en vy där olika visare kan väljas.  I de fall det finns fler än en visare för vald information.
+Eftersom möjligheten finns att användaren väljer information från flera olika vårdapplikationer om denne söker från Regionportalen. Då presenteras denne med en vy där olika visare kan väljas.  I de fall det finns fler än en visare för vald information.
 
 [https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/pdl_inre_8.png]
 
-Denna visare kan öppnas antingen som en iframe eller som en extern link.
+Denna visare kan öppnas antingen som en iframe eller som en extern länk.
 
-==Mottaga och tolka en PDL-biljett==
-När användaren gjort sina val så skickas en PDL-biljett över. 
+==Mottaga och tolka biljetter==
+För att förmedla vilka val som görs i PDL-tjänsten så skickas en PDL-biljett med till visaren. Visaren behöver då begränsa urvalet av information som användaren har tillgång till baserat på de Resurs-ID som finns i biljetten.
+
+Förutom PDL-biljetten så finns även en SAML-biljett att tillgå som kommer från Ineras SITHS-federering. Inga val i PDL-tjänsten får göras utan en starkt användare med ett Vård och Behandling-uppdrag. 
+
+===PDL-Biljetten===
+Biljetten är en digitalt signerad XML struktur som innehåller information om användaren, patienten och vilken information som är vald.
+
+Vårdapplikationen kan välja vilken struktur som Resurs-ID:n ska presenteras som i biljetten.
+
+Fält som ingår i PDL-biljetten
+|| Fältnamn || Beskrivning ||
+|| UserContext.employeeDisplayName || Användarens visningsnamn (Förnamn Efternamn) ||
+|| UserContext.employeeHsaId || Unikt HSA-ID för användaren ||
+|| Patient.patientId || Patient-ID (20-101010-1010)||
+|| Patient.patientDisplayName || Patientens visningsnamn (Förnamn Efternamn) ||
+|| Patient.sex || Kön på patienten ||
+|| Patient.age || Patientens ålder ||
+|| References || Strukturer som varierar mellan olika vårdapplikationer ||
+
+När vårdapplikationen tar emot biljetten så behövs ett antal kriterier uppfyllas för att validera biljettens äkthet.
+
+ # Hämta ut signaturen
+ # Hämta ut certifikatet
+ # Verifiera certifikatets äkthet
+  * [http://www.inera.se/TJANSTER--PROJEKT/SITHS/Dokument-for-siths/CA-certifikat-SITHS/ Verifiera att certifikatet är utfärdat av en betrodd SITHS CA-certifikat utfärdare]
+  * Verifiera att certifikatet inte är tillbakadraget
+  * Verifiera att HSA-ID (extrafältet: Serialnumber) i certifikatet överensstämmer med PDL-tjänstens serienummer
+ # Verifiera meddelandets äkthet genom att verifiera signaturen gentemot certifikatet
+ # Hämta ut strukturen som innehåller Resurs-ID:n och visa upp den informationen för användaren
+
+Denna hantering skiljer sig inte mot annan certifikatshantering men är viktig för att vara säker på att biljetten inte har blivit påverkad på vägen mellan PDL-tjänsten och vårdapplikationens visare.
+
+I grundutförandet så skickas XML-biljetten skickas över som ett POST-meddelande.
+
+===SAML-biljett===
+Då PDL-biljetten endast verifierar att en viss användare har gjort ett antal val så kan visaren även behöva identifiera avändarens identitet i de fallen att användaren inte redan är inloggad.
+
+Om vårdapplikationen stödjer federering med SAML 2.0 så kan vårdapplikationen återanvända den biljett som finns tillgänglig från PDL-tjänsten eller hämta ut en ny mha HSA-ID på användaren.
+
+I biljetten återfinns, förutom en stark identifiering av användaren, aktuellt medarbetaruppdrag.
