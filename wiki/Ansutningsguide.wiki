@@ -116,6 +116,6 @@ Om vårdapplikationen stödjer federering med SAML 2.0 och SAMBI-profilen så ka
 
 I biljetten återfinns, förutom en stark identifiering av användaren, aktuellt medarbetaruppdrag.
 
-Resurser
+*Resurser om Autentisiering och SAMBI*
  * Ytterligare [http://www.inera.se/TJANSTER--PROJEKT/Sakerhetstjanster/Autentiseringstjanst/ information om Autentisieringstjänsten finns på Ineras hemsida]
  * Information om SAMBI och det nationella federeringsinitiativet som SAMBI ingår i [http://www.sambi.se/ återfinns på hemsidan för SAMBI]
