@@ -79,7 +79,7 @@ För att förmedla vilka val som görs i PDL-tjänsten så skickas en PDL-biljet
 
 Förutom PDL-biljetten så finns även en SAML-biljett att tillgå som kommer från Ineras SITHS-federering. Inga val i PDL-tjänsten får göras utan en starkt användare med ett Vård och Behandling-uppdrag. 
 
-===PDL-Biljetten===
+===PDL-Biljett===
 Biljetten är en digitalt signerad XML struktur som innehåller information om användaren, patienten och vilken information som är vald.
 
 Vårdapplikationen kan välja vilken struktur som Resurs-ID:n ska presenteras som i biljetten.
@@ -112,6 +112,10 @@ I grundutförandet så skickas XML-biljetten skickas över som ett POST-meddelan
 ===SAML-biljett===
 Då PDL-biljetten endast verifierar att en viss användare har gjort ett antal val så kan visaren även behöva identifiera avändarens identitet i de fallen att användaren inte redan är inloggad.
 
-Om vårdapplikationen stödjer federering med SAML 2.0 så kan vårdapplikationen återanvända den biljett som finns tillgänglig från PDL-tjänsten eller hämta ut en ny mha HSA-ID på användaren.
+Om vårdapplikationen stödjer federering med SAML 2.0 och SAMBI-profilen så kan vårdapplikationen återanvända den biljett som finns tillgänglig från PDL-tjänsten eller hämta ut en ny mha HSA-ID på användaren.
 
 I biljetten återfinns, förutom en stark identifiering av användaren, aktuellt medarbetaruppdrag.
+
+Resurser
+ * Ytterligare |http://www.inera.se/TJANSTER--PROJEKT/Sakerhetstjanster/Autentiseringstjanst/ information om Autentisieringstjänsten finns på Ineras hemsida]
+ * Information om SAMBI och det nationella federeringsinitiativet som SAMBI ingår i [http://www.sambi.se/ återfinns på hemsidan för SAMBI]
