@@ -27,7 +27,7 @@ Svaret från tjänsten innehåller patientbunden information, där viss informat
 
 Resurs-ID är de ID som vårdapplikationen får tillbaka. PDL-tjänsten skickar en biljett som innehåller ett urval av Resurs-ID:n, baserat på hur användaren valt information i PDL-tjänstens gränssnitt. 
 
-Formatet på Resurs-ID bestäms av vårdapplikationen. [http://www.inera.se/TJANSTER--PROJEKT/HSA/ Generell information om HSA och dess innebörd finns på Ineras hemsida].
+Formatet på Resurs-ID bestäms av vårdapplikationen.
 
 ===Klassificering av information===
 
@@ -56,6 +56,23 @@ Ofta innehåller en vårdapplikation endast en typ av information.
 
 ==Märka upp vårdinformation med HSA-ID==
 
-==Mottaga och tolka en PDL-biljett==
+Säkerhetstjänsterna kräver att information som kontrolleras är uppmärkt med HSA-ID:n från HSA-katalogens struktur. När spärrar, patientrelationer och samtycken skapas så märks de upp med HSA-ID:n som jämförs enligt ett regelverk mot patientinformation. 
+
+Uppmärkning av patientinformation med HSA-ID:n *är därför en förutsättning* vid en PDL-anpassning för att kunna följa Vård- och omsorgsbranschens framtagna kontrakt kring säkerhetstjänsterna.
+
+Detta arbete kan vara både komplext och omfattande om HSA-ID:n inte finns sedan innan. Erfarenhet har visat att det är ytterst viktigt att i ett tidigt skede göra en analys av vilken information som saknar HSA-ID.
+
+===Om HSA från Ineras hemsida===
+"HSA är en elektronisk katalog som innehåller kvalitetssäkrade uppgifter om personer, funktioner och enheter i Sveriges kommuner, landsting och privata vårdgivare."
+
+[http://www.inera.se/TJANSTER--PROJEKT/HSA/ Generell information om HSA och dess innebörd finns på Ineras hemsida].
 
 ==Webbaserad visare==
+Eftersom möjligheten finns att användaren väljer information från flera olika vårdapplikationer om denna söker från Regionportalen. Då presenteras denne med en vy där olika visare kan väljas.  I de fall det finns fler än en visare för vald information.
+
+[https://oppna-program-rp-pdl.googlecode.com/svn/wiki/images/pdl_inre_8.png]
+
+Denna visare kan öppnas antingen som en iframe eller som en extern link.
+
+==Mottaga och tolka en PDL-biljett==
+När användaren gjort sina val så skickas en PDL-biljett över. 
